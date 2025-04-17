@@ -48,26 +48,41 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  padding: 60px 20px;
-  background-color: #f2f2f2;
+  justify-content: flex-start;
+  height: 500px;
+  background-image: url('images/hero-image.jpg'); /* Use your real image name */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-overlay {
+  background-color: rgba(255, 255, 255, 0.9); /* White overlay */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-content {
-  max-width: 50%;
+  text-align: center;
+  padding: 40px;
   animation: fadeInUp 1s ease-in-out;
 }
 
 .hero-content h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
+  color: #2d2d2d;
 }
 
 .hero-content p {
   font-size: 1.2em;
   margin-bottom: 20px;
+  color: #333;
 }
 
 .btn {
@@ -82,13 +97,6 @@ nav ul li a:hover {
 
 .btn:hover {
   background-color: #444;
-}
-
-.hero-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  animation: fadeIn 1s ease-in-out;
 }
 
 /* About Section */
