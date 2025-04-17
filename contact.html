@@ -21,13 +21,59 @@
   </header>
 
   <main>
-    <h1>Contact Us</h1>
-    <p><strong>Phone:</strong> 020 7459 4405</p>
-    <p><strong>Email:</strong> <a href="mailto:info@lucatltd.co.uk">info@lucatltd.co.uk</a></p>
+    <section class="about">
+      <h2>Contact Us</h2>
+      <p>Have a question, need a quote, or want to enrol in one of our training courses? Reach out and we’ll get back to you as soon as possible.</p>
+    </section>
+
+    <section class="features">
+      <div class="feature-cards">
+
+        <!-- Contact Card -->
+        <div class="card">
+          <h3>Email</h3>
+          <p><a href="mailto:info@lucatltd.co.uk">info@lucatltd.co.uk</a></p>
+        </div>
+
+        <div class="card">
+          <h3>Phone</h3>
+          <p><a href="tel:02074594405">020 7459 4405</a></p>
+        </div>
+
+        <div class="card">
+          <h3>Registered Address</h3>
+          <p>
+            27 Old Gloucester Street<br />
+            London<br />
+            WC1N 3AX<br />
+            United Kingdom
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>Send Us a Message</h2>
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2025 LUCAT Ltd. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
