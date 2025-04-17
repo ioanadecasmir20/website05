@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   console.log('LUCAT homepage loaded.');
 
-  // Toggle mobile menu
-  const toggleBtn = document.querySelector('.menu-toggle');
+  const toggleBtn = document.getElementById('menu-toggle');
   const menu = document.getElementById('menu');
 
   if (toggleBtn && menu) {
@@ -11,4 +10,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
-
