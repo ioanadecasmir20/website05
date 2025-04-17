@@ -216,26 +216,37 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    color: #2d2d2d;
+    margin-left: auto;
+  }
+
   nav ul {
     flex-direction: column;
-    background-color: #fff;
     position: absolute;
     top: 70px;
     left: 0;
     right: 0;
-    display: none;
+    background-color: #fff;
     padding: 20px;
-    border-top: 1px solid #ddd;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   }
 
   nav ul.show {
     display: flex;
   }
 
-  .menu-toggle {
-    display: block;
-    cursor: pointer;
-    font-size: 24px;
+  nav ul li {
+    text-align: center;
+  }
+
+  nav ul li a {
+    padding: 10px 0;
     color: #2d2d2d;
   }
 
